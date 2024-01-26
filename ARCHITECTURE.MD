@@ -7,16 +7,16 @@ MiniCore: Esta arquitetura foi concebida com o objetivo de facilitar as responsa
 A Arquitetura MiniCore é estruturada em quatro camadas distintas:
 
 ## Public
-    Onde encontramos todas as páginas e subpáginas do aplicativo.
+Onde encontramos todas as páginas e subpáginas do aplicativo.
 
 ## Interactor
-    Responsável pela execução das regras de negócios.
+Responsável pela execução das regras de negócios.
 
 ## Data
-    Encarrega-se da comunicação e transformação dos dados.
+Encarrega-se da comunicação e transformação dos dados.
 
 ## Core
-    Desempenha o papel crucial de compartilhar classes ou arquivos essenciais em toda a aplicação, promovendo uma base robusta e coesa para o desenvolvimento.
+Desempenha o papel crucial de compartilhar classes ou arquivos essenciais em toda a aplicação, promovendo uma base robusta e coesa para o desenvolvimento.
 
 <img src="mini_core.png" width="512" alt="Achitecture diagram"/>   
 
