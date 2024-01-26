@@ -4,7 +4,7 @@ MiniCore: Esta arquitetura foi concebida com o objetivo de facilitar as responsa
 
 <br>
 
-A Arquitetura MiniCore é estruturada em quatro camadas distintas:
+A Arquitetura MiniCore é estruturada em quatro camadas distintas sendo elas:
 
 ## Public
 Onde encontramos todas as páginas e subpáginas do aplicativo.
@@ -18,7 +18,31 @@ Encarrega-se da comunicação e transformação dos dados.
 ## Core
 Desempenha o papel crucial de compartilhar classes ou arquivos essenciais em toda a aplicação, promovendo uma base robusta e coesa para o desenvolvimento.
 
-<img src="mini_core.png" width="512" alt="Achitecture diagram"/>   
+<img src="mini_core.png" width="512" alt="Achitecture diagram"/>
+
+## Estrutura de Pastas
+
+As estrutura de pastas deve ser composta pelas 4 camadas.
+
+```
+.
+└── app/
+    ├── public/
+    │   └── pages
+    ├── core/
+    │   ├── assets
+    │   ├── themes
+    │   └── widgets
+    ├── data/
+    │   ├── repositories
+    │   └── services
+    └── interactor/
+        ├── atoms
+        ├── actions
+        ├── dtos
+        ├── models 
+        └── contracts
+```
 
 ## Public
 Na camada Public, encontram-se as páginas e subpáginas do aplicativo, sendo responsável pela apresentação visual e interativa.
@@ -26,22 +50,29 @@ Na camada Public, encontram-se as páginas e subpáginas do aplicativo, sendo re
 ## Interactor
 Na camada Interactor, assume-se a responsabilidade pela execução das regras de negócios. Nela, estão presentes elementos essenciais como atoms, actions, dtos, models, contratos do repositório e serviços.
 
-- Atoms: Atom refere-se a um estado que possui reatividade própria, contribuindo para a dinâmica do objeto.
+- #### Atoms: 
+    Atom refere-se a um estado que possui reatividade própria, contribuindo para a dinâmica do objeto.
 
-- Actions: Actions têm o propósito de executar as regras de negócio, promovendo a implementação prática das operações necessárias.
+- #### Actions: 
+    Actions têm o propósito de executar as regras de negócio, promovendo a implementação prática das operações necessárias.
 
-- DTO: Ou Data Transfer Object, é um padrão de design usado para transferir dados entre camadas, assegurando uma comunicação eficiente.
+- #### DTO: 
+    O Data Transfer Object é um padrão de design usado para transferir dados entre camadas, assegurando uma comunicação eficiente.
 
-- Models: Models representam a essência das regras de negócio, incorporando funcionalidades como fromMap e toJson para facilitar a serialização.
+- #### Models: 
+    Models representam a essência das regras de negócio, incorporando funcionalidades como fromMap e toJson para facilitar a serialização.
 
-- Contratos: Nessa seção, incluímos interfaces do repositório e serviços, delineando claramente os compromissos necessários.
+- #### Contratos: 
+    Nessa seção incluímos interfaces do repositório e serviços, delineando claramente os compromissos necessários.
 
 ## Data
 A camada Data assume a responsabilidade de interagir tanto com fontes externas (APIs) quanto internas (Banco de dados locais).
 
-- Repository: O padrão Repository proporciona uma abstração entre a lógica de negócios e o acesso aos dados, simplificando a gestão e manipulação desses dados.
+- #### Repository: 
+    O padrão Repository proporciona uma abstração entre a lógica de negócios e o acesso aos dados, simplificando a gestão e manipulação desses dados.
 
-- Service: O padrão Service, amplamente utilizado em arquiteturas de software, encapsula a lógica de negócios para promover modularidade, reutilização e facilidade de manutenção.
+- #### Service: 
+    O padrão Service, amplamente utilizado em arquiteturas de software, encapsula a lógica de negócios para promover modularidade, reutilização e facilidade de manutenção.
 
 ## Core
 Na camada Core, encontram-se dados globais e reutilizáveis fornecidos para todas as camadas da aplicação, incluindo como exemplo: temas, widgets, design system e dados compartilhados. Essa camada é fundamental para manter a coesão e consistência em toda a aplicação.
