@@ -22,7 +22,7 @@ Desempenha o papel crucial de compartilhar classes ou arquivos essenciais em tod
 
 ## Estrutura de Pastas
 
-As estrutura de pastas deve ser composta pelas 4 camadas.
+As estrutura de pastas deve ficar como no exemplo abaixo.
 
 ```
 .
@@ -41,14 +41,15 @@ As estrutura de pastas deve ser composta pelas 4 camadas.
         ├── actions
         ├── dtos
         ├── models 
-        └── contracts
+        ├── repositories
+        └── services
 ```
 
 ## Public
 Na camada Public, encontram-se as páginas e subpáginas do aplicativo, sendo responsável pela apresentação visual e interativa.
 
 ## Interactor
-Na camada Interactor, assume-se a responsabilidade pela execução das regras de negócios. Nela, estão presentes elementos essenciais como atoms, actions, dtos, models, contratos do repositório e serviços.
+Na camada Interactor, assume-se a responsabilidade pela execução das regras de negócios. Nela estão presentes elementos essenciais como atoms, actions, dtos, models, contratos do repositório e serviços.
 
 - #### Atoms: 
     Atom refere-se a um estado que possui reatividade própria, contribuindo para a dinâmica do objeto.
